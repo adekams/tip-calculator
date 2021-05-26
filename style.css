@@ -44,12 +44,17 @@ input {
     padding: 8px 10px;
     margin: 0 auto 20px;
     width: 100%;
-    font-weight: 600;
+    font-weight: 500;
+    outline-color: teal;
 }
+
+
 
 .btn {
     color: #fff;
     cursor: pointer;
+    font-weight: 600;
+    outline-color: transparent;
 }
 
 .btn:hover {
