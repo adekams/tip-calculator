@@ -6,6 +6,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -98,14 +99,9 @@ input {
         width: 80%;
         max-width: 900px;
     }
-    .wrapper {
-        /* display: flex;
-        justify-content: space-between;     */
-    }
-
 
     form, .results {
-        width: 45%;
+        width: 50%;
         margin: auto;
     }
 }
