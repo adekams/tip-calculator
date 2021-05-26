@@ -7,14 +7,14 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     min-height: 100vh;
 }
 
 main {
     max-width: 300px;
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
 }
 
@@ -24,13 +24,8 @@ main {
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0 50px;
 }
-
-/* form {
-    width: 100%;
-    margin: auto;
-} */
 
 label {
     color: #2e2d2d;
@@ -48,8 +43,6 @@ input {
     font-weight: 500;
     outline-color: teal;
 }
-
-
 
 .btn {
     color: #fff;
