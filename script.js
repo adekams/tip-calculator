@@ -5,11 +5,6 @@ let people = document.querySelector("#people")
 let calculate = document.getElementById("calculate")
 let reset = document.getElementById("reset")
 
-let tipAmount = document.querySelector("#tip-amount")
-let tipForEachPerson = document.querySelector("#tip-person")
-let totalBill =document.querySelector("#total-bill")
-let billForEachPerson =document.querySelector("#bill-person")
-
 let results = document.querySelector(".results")
 let tipToBePaid, tipAmountPerPersons, billPlusTip
 
@@ -19,11 +14,7 @@ let resetValues = () => {
     tip.value = ""
     people.value = ""
 
-    tipAmount.innerHTML = ""
-    tipForEachPerson.innerHTML = ""
-    billForEachPerson.innerHTML = ""
-    totalBill.innerHTML = ""
-
+    results.innerHTML = ""
     results.style.backgroundColor = "transparent"
 }
 
@@ -35,17 +26,11 @@ let calculateTip = () => {
         tipPerPersons = (tipToBePaid/people.value).toFixed(2)
         billPerPersons = (billPlusTip/ people.value).toFixed(2)
 
-        tipAmount.innerHTML = `
-            <h2>Total Tip: <span class="numbers">${tipToBePaid}</span></h2>        
-        `
-        totalBill.innerHTML = `
-            <h2>Total Bill: <span class="numbers">${billPlusTip}</span></h2>            
-        `
-        tipForEachPerson.innerHTML = `
-            <h2>Tip per Person: <span class="numbers">${tipPerPersons}</span></h2>           
-        `
-        billForEachPerson.innerHTML = `
-            <h2>Bill per Person: <span class="numbers">${billPerPersons}</span></h2>
+        results.innerHTML = `
+            <h2 id="tip-amount">Total Tip: <span class="numbers">${tipToBePaid}</span></h2>
+            <h2 id="total-bill">Total Bill: <span class="numbers">${billPlusTip}</span></h2>            
+            <h2 id="tip-person">Tip per Person: <span class="numbers">${tipPerPersons}</span></h2>           
+            <h2 id="bill-person">Bill per Person: <span class="numbers">${billPerPersons}</span></h2>
         `
         results.style.backgroundColor = "teal"
     }else {

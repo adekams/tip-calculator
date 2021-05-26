@@ -71,18 +71,12 @@ input {
 }
 
 .results {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    /* max-width: 80%; */
     width: 100%;
     margin: 30px auto 0;
     background: transparent;
     padding: 10px;
     border-radius: 3px;
     color: #fff;
-    /* text-align: center; */
 }
 
 .results h2 {
@@ -90,8 +84,7 @@ input {
 }
 
 .results h2 span {
-    font-weight: 400;
-    
+    font-weight: 400;   
 }
 
 @media (min-width: 1024px) {
