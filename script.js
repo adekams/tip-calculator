@@ -13,7 +13,7 @@ let billForEachPerson =document.querySelector("#bill-person")
 let results = document.querySelector(".results")
 let tipToBePaid, tipAmountPerPersons, billPlusTip
 
-
+// reset all inputs to empty
 let resetValues = () => {
     bill.value = ""
     tip.value = ""
@@ -25,10 +25,9 @@ let resetValues = () => {
     totalBill.innerHTML = ""
 
     results.style.backgroundColor = "transparent"
-
-    // calculateTip()
 }
 
+// if all inputs are provided, calculate and insert values
 let calculateTip = () => {
     if(bill.value && tip.value && people.value) {
         tipToBePaid = ((tip.value/100) * bill.value).toFixed(2)
