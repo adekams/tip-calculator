@@ -30,14 +30,14 @@ h1 {
 label {
     color: #2e2d2d;
     display: inline-block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 input {
     display: block;
     border: 1px solid #bbb;
-    border-radius: 3px;
-    padding: 8px 10px;
+    border-radius: 7px 0 7px 0;
+    padding: 10px;
     margin: 0 auto 20px;
     width: 100%;
     font-weight: 500;
@@ -48,7 +48,6 @@ input {
     color: #fff;
     cursor: pointer;
     font-weight: 600;
-    outline-color: transparent;
 }
 
 .btn:hover {
@@ -57,10 +56,12 @@ input {
 
 #calculate {
     background: green;
+    outline-color: green;
 }
 
 #reset {
     background: red;
+    outline-color: red;
 }
 
 .results {
@@ -68,7 +69,7 @@ input {
     margin: 30px auto 0;
     background: transparent;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 10px 0 10px 0;
     color: #fff;
 }
 
@@ -78,6 +79,11 @@ input {
 
 .results h2 span {
     font-weight: 400;   
+}
+
+footer {
+    width: 100vw;
+    text-align: center;
 }
 
 @media (min-width: 1024px) {
